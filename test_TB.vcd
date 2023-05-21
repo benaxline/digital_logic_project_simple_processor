@@ -1,0 +1,453 @@
+$date
+	Sun May 21 19:48:16 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module test_TB $end
+$var wire 3 ! bus [2:0] $end
+$var wire 3 " t8 [2:0] $end
+$var wire 3 # t7 [2:0] $end
+$var wire 3 $ t6 [2:0] $end
+$var wire 3 % t5 [2:0] $end
+$var wire 4 & reg_out [3:0] $end
+$var wire 4 ' reg_in [3:0] $end
+$var wire 1 ( g_out $end
+$var wire 1 ) g_in $end
+$var wire 1 * data_out $end
+$var wire 5 + current_state [4:0] $end
+$var wire 3 , a_out [2:0] $end
+$var wire 1 - a_in $end
+$var wire 1 . XOR_enable $end
+$var wire 1 / AddSub $end
+$var wire 1 0 AS_enable $end
+$var reg 1 1 clk $end
+$var reg 5 2 count [4:0] $end
+$var reg 4 3 func [3:0] $end
+$var reg 3 4 in1 [2:0] $end
+$var reg 3 5 in2 [2:0] $end
+$scope module A $end
+$var wire 1 1 clk $end
+$var wire 3 6 x [2:0] $end
+$var wire 1 - enable $end
+$var reg 3 7 y [2:0] $end
+$upscope $end
+$scope module D $end
+$var wire 3 8 a [2:0] $end
+$var wire 1 * enable $end
+$var reg 3 9 b [2:0] $end
+$upscope $end
+$scope module R4 $end
+$var wire 1 1 clk $end
+$var wire 1 : enable $end
+$var wire 3 ; x [2:0] $end
+$var reg 3 < y [2:0] $end
+$upscope $end
+$scope module R5 $end
+$var wire 1 1 clk $end
+$var wire 1 = enable $end
+$var wire 3 > x [2:0] $end
+$var reg 3 ? y [2:0] $end
+$upscope $end
+$scope module R6 $end
+$var wire 1 1 clk $end
+$var wire 1 @ enable $end
+$var wire 3 A x [2:0] $end
+$var reg 3 B y [2:0] $end
+$upscope $end
+$scope module R7 $end
+$var wire 1 1 clk $end
+$var wire 1 C enable $end
+$var wire 3 D x [2:0] $end
+$var reg 3 E y [2:0] $end
+$upscope $end
+$scope module T4 $end
+$var wire 3 F a [2:0] $end
+$var wire 1 G enable $end
+$var reg 3 H b [2:0] $end
+$upscope $end
+$scope module T5 $end
+$var wire 3 I a [2:0] $end
+$var wire 1 J enable $end
+$var reg 3 K b [2:0] $end
+$upscope $end
+$scope module T6 $end
+$var wire 3 L a [2:0] $end
+$var wire 1 M enable $end
+$var reg 3 N b [2:0] $end
+$upscope $end
+$scope module T7 $end
+$var wire 3 O a [2:0] $end
+$var wire 1 P enable $end
+$var reg 3 Q b [2:0] $end
+$upscope $end
+$scope module cc $end
+$var wire 1 1 clk $end
+$var wire 4 R func [3:0] $end
+$var wire 3 S input1 [2:0] $end
+$var wire 3 T input2 [2:0] $end
+$var wire 4 U temp2 [3:0] $end
+$var wire 4 V temp1 [3:0] $end
+$var wire 9 W temp [8:0] $end
+$var wire 5 X current_state [4:0] $end
+$var reg 1 0 AS_enable $end
+$var reg 1 / AddSub $end
+$var reg 4 Y R_in [3:0] $end
+$var reg 4 Z R_out [3:0] $end
+$var reg 1 - Rh_in $end
+$var reg 1 ) Rl_in $end
+$var reg 1 ( Rl_out $end
+$var reg 1 . XOR_enable $end
+$var reg 1 * data_out $end
+$var reg 5 [ next_state [4:0] $end
+$var reg 2 \ sel [1:0] $end
+$scope module in1 $end
+$var wire 1 1 clk $end
+$var wire 3 ] reg_num [2:0] $end
+$var reg 4 ^ reg_enable [3:0] $end
+$upscope $end
+$scope module in2 $end
+$var wire 1 1 clk $end
+$var wire 3 _ reg_num [2:0] $end
+$var reg 4 ` reg_enable [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 `
+b11 _
+b1000 ^
+b0 ]
+bx \
+b0 [
+b0 Z
+b0 Y
+b0 X
+b100000 W
+b1000 V
+b1 U
+b11 T
+b0 S
+b1 R
+bz Q
+0P
+bx O
+bz N
+0M
+bx L
+bz K
+0J
+bx I
+bz H
+0G
+bx F
+bx E
+bz D
+0C
+bx B
+bz A
+0@
+bx ?
+bz >
+0=
+bx <
+bz ;
+0:
+bz 9
+b11 8
+bx 7
+bz 6
+b11 5
+b0 4
+b1 3
+b0 2
+11
+00
+0/
+0.
+0-
+bx ,
+b0 +
+0*
+0)
+0(
+b0 '
+b0 &
+bx %
+bx $
+bx #
+bx "
+bz !
+$end
+#50000
+b11 %
+b11 <
+b11 F
+1:
+b11 !
+b11 6
+b11 ;
+b11 >
+b11 A
+b11 D
+b11 9
+b1000 '
+b1000 Y
+1*
+b100001 W
+b1 +
+b1 X
+b1 [
+01
+b1 2
+#100000
+0:
+b0 '
+b0 Y
+bz !
+bz 6
+bz ;
+bz >
+bz A
+bz D
+bz 9
+0*
+b100000 W
+b0 +
+b0 X
+b0 [
+11
+b10 2
+#150000
+b101 5
+b101 8
+b101 T
+b101 _
+b1 4
+b1 S
+b1 ]
+b11 2
+#200000
+b101 %
+b101 <
+b101 F
+1:
+b101 !
+b101 6
+b101 ;
+b101 >
+b101 A
+b101 D
+b101 9
+b100 V
+b100 ^
+b0 U
+b0 `
+b1000 '
+b1000 Y
+1*
+b100001 W
+b1 +
+b1 X
+b1 [
+01
+b100 2
+#250000
+0:
+b0 '
+b0 Y
+bz !
+bz 6
+bz ;
+bz >
+bz A
+bz D
+bz 9
+0*
+b100000 W
+b0 +
+b0 X
+b0 [
+11
+b101 2
+#300000
+b110 5
+b110 8
+b110 T
+b110 _
+b10 4
+b10 S
+b10 ]
+b110 2
+#350000
+b110 $
+b110 ?
+b110 I
+1=
+b110 !
+b110 6
+b110 ;
+b110 >
+b110 A
+b110 D
+b110 9
+b10 V
+b10 ^
+b100 '
+b100 Y
+1*
+b100001 W
+b1 +
+b1 X
+b1 [
+01
+b111 2
+#400000
+0=
+b0 '
+b0 Y
+bz !
+bz 6
+bz ;
+bz >
+bz A
+bz D
+bz 9
+0*
+b100000 W
+b0 +
+b0 X
+b0 [
+11
+b1000 2
+#450000
+b1 5
+b1 8
+b1 T
+b1 _
+b11 4
+b11 S
+b11 ]
+b1001 2
+#500000
+b1 #
+b1 B
+b1 L
+1@
+b1 !
+b1 6
+b1 ;
+b1 >
+b1 A
+b1 D
+b1 9
+b1 V
+b1 ^
+b100 U
+b100 `
+b10 '
+b10 Y
+1*
+b100001 W
+b1 +
+b1 X
+b1 [
+01
+b1010 2
+#550000
+0@
+b0 '
+b0 Y
+bz !
+bz 6
+bz ;
+bz >
+bz A
+bz D
+bz 9
+0*
+b100000 W
+b0 +
+b0 X
+b0 [
+11
+b1011 2
+#600000
+b0 5
+b0 8
+b0 T
+b0 _
+b100 4
+b100 S
+b100 ]
+b1100 2
+#650000
+b0 "
+b0 E
+b0 O
+1C
+b0 !
+b0 6
+b0 ;
+b0 >
+b0 A
+b0 D
+b0 9
+b0 V
+b0 ^
+b1000 U
+b1000 `
+b1 '
+b1 Y
+1*
+b100001 W
+b1 +
+b1 X
+b1 [
+01
+b1101 2
+#700000
+0C
+b0 '
+b0 Y
+bz !
+bz 6
+bz ;
+bz >
+bz A
+bz D
+bz 9
+0*
+b100000 W
+b0 +
+b0 X
+b0 [
+11
+b1110 2
+#750000
+b1 5
+b1 8
+b1 T
+b1 _
+b101 4
+b101 S
+b101 ]
+b1111 2
+#800000
+b0 W
+b0 3
+b0 R
+b10000 2
+#850000
+b10001 2
+#900000
+b10010 2
+#950000
+b10011 2
+#1000000
+b10100 2
