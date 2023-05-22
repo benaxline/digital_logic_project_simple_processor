@@ -46,13 +46,13 @@ module my_fsm (input1, input2, current_state, func, clk, next_state, data_out, R
             9'b011110000 : begin next_state = 5'b10001; data_out = 1'b0; R_in <= 4'b0000 ;R_out = temp2;  AddSub = 1'b0; a_in = 1'b1;   g_in = 1'b1; g_out = 1'b0; math_enables = 7'b0001000; end
             9'b011110001 : begin next_state = 5'b10010; data_out = 1'b0; R_in = temp1 ;R_out = 4'b0000; AddSub = 1'b0; a_in = 1'b0;  g_in = 1'b1; g_out = 1'b1; math_enables = 7'b0001000; end
             //divide
-            // 9'b100000000 : begin next_state = 5'b10011; data_out = 1'b0; R_in <= 4'b0000; R_out = temp1; AddSub = 1'b0; a_in = 1'b1; g_in = 1'b0; g_out = 1'b0; math_enables = 7'b0000010; end
-            // 9'b100010011 : begin next_state = 5'b10100; data_out = 1'b0; R_in <= 4'b0000 ;R_out = temp2;  AddSub = 1'b0; a_in = 1'b1;   g_in = 1'b1; g_out = 1'b0; math_enables = 7'b0000010; end
-            // 9'b100010100 : begin next_state = 5'b10101; data_out = 1'b0; R_in <= temp1 ;R_out = 4'b0000; AddSub = 1'b0; a_in = 1'b0;  g_in = 1'b1; g_out = 1'b1; math_enables = 7'b0000010; end
+            9'b100000000 : begin next_state = 5'b10011; data_out = 1'b0; R_in <= 4'b0000; R_out = temp1; AddSub = 1'b0; a_in = 1'b1; g_in = 1'b0; g_out = 1'b0; math_enables = 7'b0000010; end
+            9'b100010011 : begin next_state = 5'b10100; data_out = 1'b0; R_in <= 4'b0000 ;R_out = temp2;  AddSub = 1'b0; a_in = 1'b1;   g_in = 1'b1; g_out = 1'b0; math_enables = 7'b0000010; end
+            9'b100010100 : begin next_state = 5'b10101; data_out = 1'b0; R_in = temp1 ;R_out = 4'b0000; AddSub = 1'b0; a_in = 1'b0;  g_in = 1'b1; g_out = 1'b1; math_enables = 7'b0000010; end
             //modulo
-            // 9'b100100000 : begin next_state = 5'b10110; data_out = 1'b0; R_in <= 4'b0000; R_out = temp1; AddSub = 1'b0; a_in = 1'b1; g_in = 1'b0; g_out = 1'b0; math_enables = 7'b0000001; end
-            // 9'b100110110 : begin next_state = 5'b10111; data_out = 1'b0; R_in <= 4'b0000 ;R_out = temp2;  AddSub = 1'b0; a_in = 1'b1;   g_in = 1'b1; g_out = 1'b0; math_enables = 7'b0000001; end
-            // 9'b100110111 : begin next_state = 5'b11000; data_out = 1'b0; R_in <= temp1 ;R_out = 4'b0000; AddSub = 1'b0; a_in = 1'b0;  g_in = 1'b1; g_out = 1'b1; math_enables = 7'b0000001; end
+            9'b100100000 : begin next_state = 5'b10110; data_out = 1'b0; R_in <= 4'b0000; R_out = temp1; AddSub = 1'b0; a_in = 1'b1; g_in = 1'b0; g_out = 1'b0; math_enables = 7'b0000001; end
+            9'b100110110 : begin next_state = 5'b10111; data_out = 1'b0; R_in <= 4'b0000 ;R_out = temp2;  AddSub = 1'b0; a_in = 1'b1;   g_in = 1'b1; g_out = 1'b0; math_enables = 7'b0000001; end
+            9'b100110111 : begin next_state = 5'b11000; data_out = 1'b0; R_in = temp1 ;R_out = 4'b0000; AddSub = 1'b0; a_in = 1'b0;  g_in = 1'b1; g_out = 1'b1; math_enables = 7'b0000001; end
             default begin next_state = 5'b00000; data_out = 1'b0; R_in <= 4'b0000;R_out <= 4'b0000; AddSub = 1'b0; a_in = 1'b0;   g_in = 1'b0; g_out = 1'b0; math_enables = 7'b0000000; end
         endcase
     end

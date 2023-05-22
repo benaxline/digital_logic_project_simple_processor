@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
  
-module and_TB;
+module mod_TB;
  
 	reg [2:0] in1, in2;
 	wire [2:0] bus, t0, t1, t2, t3, t4, t5, t6, t7, t8, temp, a_out, temp1, alu_out,  xor_out, add_out, sub_out, g;
@@ -47,9 +47,9 @@ module and_TB;
 	or_function orme(.a(a_out), .b(bus), .g(or_out));
 	tri_buf ortri(.a(or_out), .enable(math_out[2]), .b(g));
 
-	// divide divme(.dividend(a_out), .divisor(bus), .quotient(divide_out), .remainder(mod_out));
-	// tri_buf divtri(.a(divide_out), .enable(math_out[1]), .b(g));
-	// tri_buf modtri(.a(mod_out), .enable(math_out[0]), .b(g));
+	divide divme(.dividend(a_out), .divisor(bus), .quotient(divide_out), .remainder(mod_out));
+	tri_buf divtri(.a(divide_out), .enable(math_out[1]), .b(g));
+	tri_buf modtri(.a(mod_out), .enable(math_out[0]), .b(g));
 
 
 	register G(.x(g), .clk(clk), .enable(g_in), .y(temp1));
@@ -78,11 +78,11 @@ module and_TB;
 			5'b01001 : begin clk = 0; end
 			5'b01010 : begin clk = 1; func = 4'b0010; in1 = 3'b010; in2 = 3'b000; end
 			5'b01011 : begin clk = 0; end
-			5'b01100 : begin clk = 1; func = 4'b0111; in1 = 3'b000; in2 = 3'b001; end
+			5'b01100 : begin clk = 1; func = 4'b1001; in1 = 3'b000; in2 = 3'b001; end
 			5'b01101 : begin clk = 0; end
-			5'b01110 : begin clk = 1; func = 4'b0111; in1 = 3'b000; in2 = 3'b001; end
+			5'b01110 : begin clk = 1; func = 4'b1001; in1 = 3'b000; in2 = 3'b001; end
 			5'b01111 : begin clk = 0; end
-			5'b10000 : begin clk = 1; func = 4'b0111; in1 = 3'b000; in2 = 3'b001; end
+			5'b10000 : begin clk = 1; func = 4'b1001; in1 = 3'b000; in2 = 3'b001; end
 			5'b10001 : begin clk = 0; end
 
 
@@ -90,8 +90,8 @@ module and_TB;
 	end
 
 	initial begin
-		$dumpfile("and_TB.vcd");
-		$dumpvars(0, and_TB);
+		$dumpfile("mod_TB.vcd");
+		$dumpvars(0, mod_TB);
 		#1000
 		$finish;
 	end
