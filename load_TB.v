@@ -41,25 +41,8 @@ module mod_TB;
 
 	register A(.x(bus), .clk(clk), .enable(a_in), .y(a_out));
 
-	xor_function my_xor(.a(a_out), .b(bus), .g(xor_out));
-	tri_buf xortri(.a(xor_out), .enable(math_out[6]), .b(g));
-
-	adding addme(.a(a_out), .b(bus), .addsub(AddSub), .out(add_out));
-	tri_buf addtri(.a(add_out), .enable(math_out[5]), .b(g));
-
-	subbing subme(.a(a_out), .b(bus), .out(sub_out));
-	tri_buf subtri(.a(sub_out), .enable(math_out[4]), .b(g));
-
-	and_function andme(.a(a_out), .b(bus), .g(and_out));
-	tri_buf andtri(.a(and_out), .enable(math_out[3]), .b(g));
-
-	or_function orme(.a(a_out), .b(bus), .g(or_out));
-	tri_buf ortri(.a(or_out), .enable(math_out[2]), .b(g));
-
-	divide divme(.dividend(a_out), .divisor(bus), .quotient(divide_out), .remainder(mod_out));
-	tri_buf divtri(.a(divide_out), .enable(math_out[1]), .b(g));
-	tri_buf modtri(.a(mod_out), .enable(math_out[0]), .b(g));
-
+	my_alu alu( .p(a_out), .q(bus), .math_out(math_out), .g(g));
+	
 
 	register G(.x(g), .clk(clk), .enable(g_in), .y(temp1));
 	tri_buf g_buf(.a(temp1), .enable(g_out), .b(bus));
