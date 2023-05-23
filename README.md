@@ -25,7 +25,7 @@ Divide: This divides two binary numbers saving in the first specified register.
 
 Remainder: This determines the reaminder of two binary numbers saving in the first specified register.
 
-# How it works
+## How it works
 
 This processor takes in the function number, and the two inputs, Rx and Ry.
 
