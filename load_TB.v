@@ -2,8 +2,8 @@
  
 module mod_TB;
  
-	reg [2:0] in1, in2;
-	wire [2:0] bus, t0, t1, t2, t3, t4, t5, t6, t7, t8, temp, a_out, temp1, alu_out,  xor_out, add_out, sub_out, g;
+	reg [15:0] in1, in2;
+	wire [15:0] bus, t0, t1, t2, t3, t4, t5, t6, t7, t8, temp, a_out, temp1, alu_out,  xor_out, add_out, sub_out, g;
 	wire [2:0] and_out, or_out, divide_out, mod_out;
 	reg clk;
 	reg [3:0] func;

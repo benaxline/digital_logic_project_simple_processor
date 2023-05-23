@@ -1,6 +1,6 @@
 module my_fsm (input1, input2, current_state, func, clk, next_state, data_out, R_in, R_out, AddSub, a_in, g_in, g_out,  math_enables);
     input clk;
-    input [2:0] input1, input2;
+    input [15:0] input1, input2;
     input [3:0] func;
     input [4:0] current_state; 
     output reg [4:0] next_state;

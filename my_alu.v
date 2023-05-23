@@ -1,8 +1,8 @@
 module my_alu(p, q, math_out, g);
-    input [2:0] p, q;
+    input [15:0] p, q;
 	input [6:0] math_out;
-	output [2:0] g;
-	wire [2:0] xor_out, add_out, sub_out, and_out, or_out, divide_out, mod_out;
+	output [15:0] g;
+	wire [15:0] xor_out, add_out, sub_out, and_out, or_out, divide_out, mod_out;
 	
 
 

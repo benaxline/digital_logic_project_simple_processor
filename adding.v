@@ -1,7 +1,7 @@
 module adding(a, b, out,  addsub);
-    input [2:0] a, b;
+    input [15:0] a, b;
     input addsub;
-    output [2:0] out;
+    output [15:0] out;
 
     wire temp;
     wire t;
