@@ -1,7 +1,7 @@
 # Digital Logic Final Project
 ## Simple Processor
 
-The task of this project was to create a simple processor in verilog, eventually putting it on the FPGA board. We currently have eight registers, each of 16 bits. 
+The task of this project was to create a simple processor in verilog, eventually putting it on the FPGA board. We currently have eight registers, each of three bits. 
 
 ## Functions Implemented
 
@@ -24,9 +24,3 @@ AND: This AND's two binary numbers saving in the first specified register.
 Divide: This divides two binary numbers saving in the first specified register.
 
 Remainder: This determines the reaminder of two binary numbers saving in the first specified register.
-
-## How it works
-
-This processor takes in the function number, and the two inputs, Rx and Ry.
-
-
