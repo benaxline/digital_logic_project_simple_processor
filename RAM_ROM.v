@@ -19,6 +19,12 @@ module RAM_ROM(address, code, sw);
             5'b01010 : begin code <= {4'b0010, 3'b010, 3'b001, 13'h000}; end // MOV R2 R1
 
             5'b01011 : begin code <= {4'b0011, 3'b011, 3'b000, 13'h000}; end // ADD R3 R0
+            5'b01100 : begin code <= {4'b0100, 3'b000, 3'b111, 13'h000}; end // SUB R0 R7
+            5'b01101 : begin code <= {4'b0101, 3'b011, 3'b001, 13'h000}; end // XOR R3 R1
+            5'b01110 : begin code <= {4'b0110, 3'b010, 3'b110, 13'h000}; end // OR R2 R6
+            5'b01111 : begin code <= {4'b0111, 3'b100, 3'b011, 13'h000}; end // AND R4 R3
+            5'b10000 : begin code <= {4'b1000, 3'b010, 3'b101, 13'h000}; end // DIV R2 R5
+            5'b10001 : begin code <= {4'b1001, 3'b001, 3'b000, 13'h000}; end // MOD R1 R0
 
             default: begin code <= {4'b0000, 18'h0000}; end
 
