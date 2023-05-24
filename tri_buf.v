@@ -7,7 +7,7 @@ module tri_buf(a, b, enable);
         if  (enable) begin
             b = a;
         end else begin
-            b = 16'hzzzz;
+            b = 16'bzzzzzzzzzzzzzzzz;
         end
     end
 

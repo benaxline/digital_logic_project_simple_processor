@@ -18,7 +18,7 @@ module TB;
     initial begin
         $dumpfile("TB.vcd");
         $dumpvars(0, TB);
-        #1000
+        #5000
         $finish;
     end
 
